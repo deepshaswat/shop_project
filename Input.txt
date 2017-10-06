@@ -1,0 +1,115 @@
+insert into role values (1, 'admin');
+insert into role values (2, 'accountant');
+insert into user values ( 1, 'deepshaswat', 'Shaswat', 'Deep',  'deepshaswat@gmail.com', 1, 'password');
+insert into user values ( 2, 'dilipkumar', 'Dilip', 'Kumar', '1959dilipkumar@gmail.com', 1, 'password');
+
+ 
+INSERT INTO category VALUES (0, 'Steel Small');
+INSERT INTO category VALUES (0, 'Steel Medium'); 
+INSERT INTO category VALUES (0, 'Steel Big');
+INSERT INTO category VALUES (0, 'Steel Fancy');
+INSERT INTO category VALUES (0, 'Cutlery');
+INSERT INTO category VALUES (0, 'Steel Others');
+
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Thali', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Plate', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Katori', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Glass', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Tiffin', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Milkcan', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Dip Dabba', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Roti Dabba', (SELECT cid FROM category WHERE cname = "Steel Small"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Masala Dabba', (SELECT cid FROM category WHERE cname = "Steel Small"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Gamla', (SELECT cid FROM category WHERE cname = "Steel Medium"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Karahi', (SELECT cid FROM category WHERE cname = "Steel Medium"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Topia', (SELECT cid FROM category WHERE cname = "Steel Medium"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Drum', (SELECT cid FROM category WHERE cname = "Steel Big"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Bertan Stand', (SELECT cid FROM category WHERE cname = "Steel Big"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Bertan Jali', (SELECT cid FROM category WHERE cname = "Steel Big"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Filter Stand', (SELECT cid FROM category WHERE cname = "Steel Big"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Saucepan & Frypan', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Idly Pot', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Jug', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Lota', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Casserole', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Lunch Box', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Poori Dabba', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Filter', (SELECT cid FROM category WHERE cname = "Steel Fancy"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Spoon', (SELECT cid FROM category WHERE cname = "Cutlery"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Kalchul', (SELECT cid FROM category WHERE cname = "Cutlery"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Spoon Set', (SELECT cid FROM category WHERE cname = "Cutlery"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Cutlery"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Gheepot', (SELECT cid FROM category WHERE cname = "Steel Others"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Namakdani', (SELECT cid FROM category WHERE cname = "Steel Others"));
+
+
+
+INSERT INTO category VALUES (0, 'Milton');
+INSERT INTO category VALUES (0, 'Cooker');
+INSERT INTO category VALUES (0, 'Mixy');
+INSERT INTO category VALUES (0, 'Non Stick');
+INSERT INTO category VALUES (0, 'Gas Stove');
+INSERT INTO category VALUES (0, 'Filter Reg');
+INSERT INTO category VALUES (0, 'Plastic Goods - Others');
+INSERT INTO category VALUES (0, 'Electric Item');
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Casserole', (SELECT cid FROM category WHERE cname = "Milton"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Lunch Box', (SELECT cid FROM category WHERE cname = "Milton"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Water Flask', (SELECT cid FROM category WHERE cname = "Milton"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Water Pot', (SELECT cid FROM category WHERE cname = "Milton"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Steel Flask', (SELECT cid FROM category WHERE cname = "Milton"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Milton"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Hawkins', (SELECT cid FROM category WHERE cname = "Cooker"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'United', (SELECT cid FROM category WHERE cname = "Cooker"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Panasonic', (SELECT cid FROM category WHERE cname = "Cooker"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Cooker"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Bazaz', (SELECT cid FROM category WHERE cname = "Mixy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Kenstar', (SELECT cid FROM category WHERE cname = "Mixy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Chalu', (SELECT cid FROM category WHERE cname = "Mixy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Maharaja', (SELECT cid FROM category WHERE cname = "Mixy"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Mixy"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Nirlep', (SELECT cid FROM category WHERE cname = "Non Stick"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Hawkins', (SELECT cid FROM category WHERE cname = "Non Stick"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'United', (SELECT cid FROM category WHERE cname = "Non Stick"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Non Stick"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Toaster', (SELECT cid FROM category WHERE cname = "Non Stick"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Surya ETC', (SELECT cid FROM category WHERE cname = "Gas Stove"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Gas Stove"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Casserole Chalu', (SELECT cid FROM category WHERE cname = "Plastic Goods - Others"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Casserole Fancy', (SELECT cid FROM category WHERE cname = "Plastic Goods - Others"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Plastic Goods - Others"));
+
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Iron', (SELECT cid FROM category WHERE cname = "Electric Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Toaster', (SELECT cid FROM category WHERE cname = "Electric Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Others', (SELECT cid FROM category WHERE cname = "Electric Item"));
+
+
+
+INSERT INTO category VALUES (0, 'Aluminium Item');
+INSERT INTO category VALUES (0, 'Accessories');
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Karahi Chalu', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Saucepan & Frypan', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Topia', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Idly Pot', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Karahi Sp', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Chakla Belna', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Tawa', (SELECT cid FROM category WHERE cname = "Aluminium Item"));
+
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Cooker Weight', (SELECT cid FROM category WHERE cname = "Accessories"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Gas Pipe', (SELECT cid FROM category WHERE cname = "Accessories"));
+INSERT INTO subcategory (scid, scname, c_id) VALUES (0, 'Regulator', (SELECT cid FROM category WHERE cname = "Accessories"));
+
+
